@@ -23,7 +23,13 @@ h1 {
   padding: 8px;
 }
 
-header{
+ @media (max-width: 400px) {
+  h1 {
+    margin-top: 64px;
+  }
+ }
+
+header {
   border-style: solid;
   border-width: 0px 0px 8px 0px;
   border-color: hsl(0deg, 0%, 40%) 
@@ -35,7 +41,7 @@ p {
 
 .card {
   background-color: white;
-  height: 300px;
+  min-height: 300px;
   padding: 8px;
   border-style: solid;
   border-width: 0px 0px 8px 0px;
@@ -44,8 +50,19 @@ p {
 
 .intro-chunk > p {
   padding: 8px;
-  width: 60%;
 }
+
+ @media (max-width: 300px) {
+  .intro-chunk > p{
+    width: 100%;
+  }
+ }
+
+ @media (max-width: 400px) {
+  .intro-chunk > p{
+    width: 80%;
+  }
+ }
 
 main {
   background-color: hsl(0deg, 0%, 60%);
@@ -69,7 +86,12 @@ main {
   border-width: 0px 0px 8px 0px;
   border-color: hsl(45deg, 100%, 40%);
 }
-}
+@media (max-width: 400px) {
+  .indented-heading {
+    margin-right: 10%; 
+  }
+ }
+
 .intro-chunk{
   max-width: 250px;
   padding-right:0px;
